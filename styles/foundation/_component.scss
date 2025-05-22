@@ -1,0 +1,108 @@
+@use "variables" as var;
+@use "setting" as set;
+
+.c-wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.c-sectionTitle--en {
+  font-size: 6.4rem;
+  font-family: "Josefin Sans";
+  display: block;
+  line-height: 1;
+}
+.c-sectionTitle--ja {
+  font-weight: bold;
+}
+.c-sectionTitle {
+  margin-bottom: 30px;
+}
+.c-sectionTitle--white {
+  color: #fff;
+}
+.c-sectionTitle--jaPink {
+  color: var.$pink;
+}
+
+.c-btn {
+  text-align: center;
+  a {
+    background-color: var.$pink;
+    display: inline-block;
+    padding: 30px;
+    border-radius: 100px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+}
+
+// trainerとpriceセクションのピンクのウェーブ背景画像
+.c-pinkWaveBg {
+  background-color: var.$pink;
+  padding: 65px 0;
+}
+
+.c-PinkWaveBgTop {
+  transform: translateY(1px);
+}
+
+.c-PinkWaveBgBottom {
+  transform: translateY(-1px);
+}
+
+.c-btn--left {
+  text-align: left;
+}
+
+.c-btn--center {
+  a {
+    display: inline-block;
+    max-width: 360px;
+  }
+}
+
+.c-btn--center--pink {
+  margin-bottom: 60px;
+}
+
+.c-btn--small {
+  a {
+    font-size: 1.2rem;
+    background-color: var.$pink;
+    display: inline-block;
+    width: 200px;
+    padding: 12px;
+  }
+}
+
+.c-btn--white {
+  a {
+    color: var.$pink;
+    background-color: #fff;
+  }
+}
+
+.c-toTopBtn__link {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  position: fixed;
+  bottom: 5%;
+  right: 1%;
+  border-radius: 100px;
+
+  &::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-top: solid 3px var.$pink;
+    border-right: solid 3px var.$pink;
+    transform: rotate(315deg);
+    position: absolute;
+    top: 16px;
+    right: 15px;
+  }
+}
